@@ -1,0 +1,17 @@
+{
+  // Gemini AI feature
+  "IDX.aI.enableInlineCompletion": true,
+  "IDX.aI.enableCodebaseIndexing": true,
+
+  // Editor
+  "editor.formatOnSave": true,
+  "editor.fontSize": 18,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "editor.fontWeight": 300,
+
+  // Turn off auto save
+  "files.autoSave": "off"
+}
