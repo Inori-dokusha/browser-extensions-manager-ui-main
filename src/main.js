@@ -12,23 +12,14 @@ function getItems(items) {
   });
   const container = document.querySelector(".extensions");
   container.innerHTML = cards;
-  onclick();
+  clicked();
 }
 
-function onclick() {
-  document.addEventListener("click", (e) => {
-    if (e.target.className == "spinner" || e.target.className == "circle") {
-      click();
-      console.log(true);
-    } else {
-      console.log(false);
-    }
+function clicked() {
+  document.addEventListener("click", async function (e) {
+    const t = e.target.chill(".cirlce");
+    console.log(t);
   });
-}
-
-function click(toggle) {
-  toggle = document.querySelector(".click");
-  console.log(toggle);
 }
 
 function showItems(i) {

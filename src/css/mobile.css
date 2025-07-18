@@ -1,0 +1,32 @@
+@media screen and (max-width: 700px) {
+  .container {
+    padding: 0 2rem;
+  }
+
+  .top {
+    flex-direction: column;
+    margin: 30px 0;
+    height: max-content;
+  }
+
+  .title {
+    margin-bottom: 10px;
+  }
+
+  .features {
+    justify-content: center;
+  }
+
+  .extensions {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .cards {
+    width: 100%;
+  }
+
+  .info p {
+    margin-top: 5px;
+  }
+}

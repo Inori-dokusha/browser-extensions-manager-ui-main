@@ -1,5 +1,5 @@
 {
-  // Gemini AI feature
+  // Gemini AI
   "IDX.aI.enableInlineCompletion": true,
   "IDX.aI.enableCodebaseIndexing": true,
 
