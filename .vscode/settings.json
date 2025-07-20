@@ -11,6 +11,7 @@
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.smoothScrolling": true,
   "editor.fontWeight": 300,
+  "editor.wordWrap": "on",
 
   // Set auto save to off
   "files.autoSave": "off",
