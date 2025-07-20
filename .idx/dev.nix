@@ -17,6 +17,7 @@
       "esbenp.prettier-vscode"
       "usernamehw.errorlens"
       "vscode-icons-team.vscode-icons"
+      "ritwickdey.LiveServer"
     ];
     # Enable previews and customize configuration
     previews = {
