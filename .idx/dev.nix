@@ -18,10 +18,10 @@
   idx = {
     # Search for the extensions you want on https://open-vsx.org/ and use "publisher.id"
     extensions = [
-      # "vscodevim.vim"
       "esbenp.prettier-vscode"
       "usernamehw.errorlens"
       "vscode-icons-team.vscode-icons"
+      "Catppuccin.catppuccin-vsc"
     ];
 
     # Enable previews

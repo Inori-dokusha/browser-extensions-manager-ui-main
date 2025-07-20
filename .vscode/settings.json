@@ -12,6 +12,6 @@
   "editor.smoothScrolling": true,
   "editor.fontWeight": 300,
 
-  // Turn off auto save
+  // Set auto save to off
   "files.autoSave": "off"
 }
