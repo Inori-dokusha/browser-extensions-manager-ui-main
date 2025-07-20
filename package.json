@@ -23,7 +23,7 @@
     "to-regex-range": "^5.0.1"
   },
   "scripts": {
-    "sass": "sass --watch /src/sass/main.scss /src/css/style.css --style=compresed --no-source-map"
+    "sass": "sass --watch src/sass/main.scss:src/css/style.min.css --style=compressed --no-source-map"
   },
   "keywords": [],
   "author": "",
