@@ -13,5 +13,10 @@
   "editor.fontWeight": 300,
 
   // Set auto save to off
-  "files.autoSave": "off"
+  "files.autoSave": "off",
+
+  // Nix
+  "[nix]": {
+    "editor.defaultFormatter": "google.nix-language"
+  }
 }
