@@ -1,182 +1,198 @@
 @import url("base/fonts.css");
 @import url("base/reset.css");
+
 /* colors */
 :root {
-  /* Neutral */
-  --Neutral-900: hsl(227, 75%, 14%);
-  --Neutral-700: hsl(225, 23%, 24%);
-  --Neutral-800: hsl(226, 25%, 17%);
-  --Neutral-600: hsl(226, 11%, 37%);
-  --Neutral-300: hsl(0, 0%, 78%);
-  --Neutral-200: hsl(217, 61%, 90%);
-  --Neutral-100: hsl(0, 0%, 93%);
-  --Neutral-0: hsl(200, 60%, 99%);
+    /* Neutral */
+    --Neutral-900: hsl(227, 75%, 14%);
+    --Neutral-700: hsl(225, 23%, 24%);
+    --Neutral-800: hsl(226, 25%, 17%);
+    --Neutral-600: hsl(226, 11%, 37%);
+    --Neutral-300: hsl(0, 0%, 78%);
+    --Neutral-200: hsl(217, 61%, 90%);
+    --Neutral-100: hsl(0, 0%, 93%);
+    --Neutral-0: hsl(200, 60%, 99%);
+    
+    /* Red */
+    --Red-400: hsl(3, 86%, 64%);
+    --Red-500: hsl(3, 71%, 56%);
+    --Red-700: hsl(3, 77%, 44%);
+    
+    /* Gradient */
+    --Light-Gradient: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
+    --Dark-Gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
+    
+    /* box shadow */
+    --shadow: 0 3px 5px var(--Neutral-200);
+}
 
-  /* Red */
-  --Red-400: hsl(3, 86%, 64%);
-  --Red-500: hsl(3, 71%, 56%);
-  --Red-700: hsl(3, 77%, 44%);
+[data-theme="dark"] {
+    --Dark-Gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
+    --Neutral-0: hsl(200, 60%, 99%);
+    
+}
 
-  /* Gradient */
-  --Light-Gradient: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
-  --Dark-Gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
-
-  /* box shadow */
-  --shadow: 0 3px 5px var(--Neutral-200);
+html {
+    transition: all 300ms;
 }
 
 body {
-  background: var(--Light-Gradient) no-repeat;
-  height: max-content;
+    background: var(--Light-Gradient) no-repeat;
+    height: max-content;
 }
 
 .container {
-  padding: 0 5rem;
+    padding: 0 5rem;
 }
 
 .nav {
-  background-color: var(--Neutral-0);
-  display: flex;
-  margin: 30px 0;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 15px;
-  box-shadow: var(--shadow);
-  padding: 15px;
+    background-color: var(--Neutral-0);
+    display: flex;
+    margin: 30px 0;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    padding: 15px;
 }
 
 .logo {
-  width: 100%;
+    width: 100%;
 }
 
 .toggle {
-  height: 100%;
-  display: block;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 10px;
-  transition: background-color 0.3s;
+    height: 100%;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
 }
 
 .toggle:hover {
-  background-color: var(--Neutral-300);
+    background-color: var(--Neutral-300);
 }
 
 .top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 40px;
-  margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin-top: 80px;
 }
 
 .title {
-  flex-shrink: 0;
-  height: 100%;
-  font-weight: 800;
-  font-size: 1.9rem;
-  color: var(--Neutral-900);
+    flex-shrink: 0;
+    height: 100%;
+    font-weight: 800;
+    font-size: 1.9rem;
+    color: var(--Neutral-900);
 }
 
 .features {
-  display: flex;
-  width: 100%;
-  justify-content: end;
-  align-items: center;
-  gap: 1rem;
-  height: 100%;
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+    height: 100%;
 }
 
 .features button {
-  align-items: center;
-  height: 100%;
-  padding: 10px 20px;
-  border-radius: 30px;
-  transition: background-color 0.3s, color 0.2s;
-  background-color: var(--Neutral-0);
-  border: none;
-  box-shadow: var(--shadow);
+    align-items: center;
+    height: 100%;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.2s;
+    background-color: var(--Neutral-0);
+    border: none;
+    box-shadow: var(--shadow);
 }
 
 .features button:hover {
-  background-color: var(--Red-400);
-  color: var(--Neutral-0);
+    background-color: var(--Red-400);
+    color: var(--Neutral-0);
 }
 
 .extensions {
-  margin: 30px 0;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+    margin: 30px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
 }
 
 .cards {
-  background-color: var(--Neutral-0);
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: var(--shadow);
+    background-color: var(--Neutral-0);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
 }
 
 .row-1 {
-  display: flex;
-  gap: 10px;
+    display: flex;
+    gap: 10px;
 }
 
 .info span {
-  margin-bottom: 10px;
-  font-weight: bold;
-  font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 
 .info p {
-  font-size: 0.9rem;
+    font-size: 0.9rem;
 }
 
 .row-2 {
-  align-self: stretch;
-  display: flex;
-  margin-top: 60px;
-  justify-content: space-between;
-  align-items: center;
+    align-self: stretch;
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .remove {
-  border: 1px solid var(--Neutral-300);
-  padding: 6px 10px;
-  border-radius: 20px;
-  font-size: 14px;
-  transition: 300ms;
+    border: 1px solid var(--Neutral-300);
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: 300ms;
 }
 
 .remove:hover {
-  background-color: var(--Red-700);
-  color: var(--Neutral-0);
-  border: 1px solid var(--Red-700);
+    background-color: var(--Red-700);
+    color: var(--Neutral-0);
+    border: 1px solid var(--Red-700);
 }
 
 .spinner {
-  width: 40px;
-  height: 20px;
-  text-align: end;
-  position: relative;
-  background-color: var(--Red-700);
-  border-radius: 20px;
-  cursor: pointer;
+    width: 40px;
+    height: 20px;
+    text-align: end;
+    position: relative;
+    background-color: var(--Red-700);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 300ms ease-out;
 }
 
 .circle {
-  content: "";
-  position: absolute;
-  right: 2px;
-  top: 2px;
-  bottom: 2px;
-  width: 16px;
-  background-color: var(--Neutral-0);
-  border-radius: 100%;
+    content: "";
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+    width: 16px;
+    background-color: var(--Neutral-0);
+    border-radius: 100%;
+    transition: 300ms;
 }
 
-.circle.non-active {
-  left: 0;
-  background-color: var(--Neutral-200);
+.non-active {
+    left: 2px;
+}
+
+.bg-color {
+    background-color: var(--Neutral-200);
 }
